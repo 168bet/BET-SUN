@@ -1,0 +1,93 @@
+.fb-charge-box {
+	background: #e1f0f7;
+	color: #000;
+	text-align: left;
+	padding: 20px 15px;
+}
+
+.fb-charge-box h1{
+	width: 750px;
+	height: 15px;
+	font-weight: bold;
+	color: #250709;
+	font-size: 14px;
+	margin: 0px;
+}
+
+.fb-charge-box span{
+	margin: 0 55px 0 35px;
+}
+
+.fb-charge-box button{
+	border: 0px;
+	background-position: center;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-weight: normal;
+	background-image: url(../../img/fb-charge-button.png);
+}
+
+.fb-ocharge-box{
+	background-color: #FFF;
+	color: #000;
+	text-align: left;
+	padding:20px 22px;
+}
+.fb-ocharge-box>strong{
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.fb-ocharge-info{
+	border: 1px solid #000;
+	padding: 20px;
+}
+.fb-ocharge-text{
+	height: 30px;
+}
+.fb-ocharge-text>label{
+	padding-right: 20px;
+	text-align: right;
+	height: 30px;
+	width: 100px;
+	display: inline-block;
+}
+.fb-ocharge-text>span{
+	text-align: left;
+}
+.fb-ccharge-box{
+	background: #e1f0f7;
+	color: #000;
+	text-align: left;
+	padding:20px 22px;
+}
+.fb-ccharge-table{
+	background: #FFF;
+	color: #000;
+	text-align: left;
+	width: 100%;
+}
+.fb-ccharge-table tr:hover{
+	background-color: #EEE;
+}
+.fb-ccharge-info{
+	border: 1px solid #000;
+}
+.fb-ccharge-box .fb-input-label{
+	color: #000;
+	vertical-align: middle;
+}
+.fb-ccharge-box .fb-input-box{
+	margin: 5px 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+.fb-ccharge-box .fb-input-text{
+	vertical-align: middle;
+}
+.fb-ccharge-box .fb-valicode-pic{
+	vertical-align: middle;
+	height: 20px;
+	padding: 0px;
+	margin: 0 20px;
+}

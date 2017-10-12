@@ -1,0 +1,72 @@
+/*中间广告*/
+.fb-index-ad{
+	width: 100%;
+	height: 350px;
+	background-image: url(../../img/index/fb-ad.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+/*小游戏板块*/
+.fb-index-mgame-box{
+	width: 100%;
+	margin: 10px 0px;
+	border-bottom: 2px solid #f9f26d;
+	display: inline-block;
+}
+
+.fb-index-mgame{
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 34px;
+	color: #e0c250;
+	margin: 10px 2.5%;
+	width: 20%;
+	border-radius: 5px;
+	background-color: #236156;
+	cursor:pointer;
+}
+.fb-index-mgame:hover{
+	background-color: #194b41;
+}
+
+/*最新消息*/
+.fb-news-box{
+	height: 34px;
+	width: 100%;
+	padding: 0px 20px;
+	border-radius: 5px;
+	background-color: #225a4f;
+	background-image: url(../../img/fb-news-bg.png);
+	background-repeat: repeat-x;
+}
+.fb-news-content{
+	padding-left: 50px;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	color: #FFF;
+	line-height: 34px;
+}
+
+/*大型游戏板块*/
+.fb-index-bgame-box{
+	width: 100%;
+	margin: 15px 0px;
+	display: inline-block;
+}
+.fb-index-bgame{
+	float: left;
+	width: 25%;
+	margin: 10px 0;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 34px;
+	color: #e0c250;
+	cursor: pointer;
+}
+.fb-index-bgame>img{
+	width: 100%;
+}

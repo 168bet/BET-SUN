@@ -1,0 +1,63 @@
+.fb-transation-table{
+	width: 100%;
+	border-spacing: 0px;
+}
+
+.fb-transation-menu{
+	height: 24px;
+	background: #6093C6;
+	line-height: 24px;
+}
+.fb-transation-menu > div{
+	color: #00268A;
+	width: 91px;
+	text-align: center;
+	float: left;
+}
+
+.fb-transation-head{
+	background: #004d99;
+	color: #FFF;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.fb-transation-head{
+	color: #FFF;
+	text-align: center;
+	border-color: gray;
+}
+.fb-transation-head  th{
+	font-weight: normal;
+	text-align: center;
+	border-top:1px solid #FFF ;
+	border-left: 1px solid #FFF;
+}
+
+.fb-transation-body{
+	background: #FFF;
+	color: #000;
+	text-align: center;
+}
+.fb-transation-body tr{
+	height: 30px;
+}
+
+.fb-transation-body td{
+	height: 30px;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+}
+.fb-transation-footer tr{
+	height: 30px;
+	background-color: rgb(255, 249, 205);
+}
+.fb-transation-footer td{
+	color: #000;
+	text-align: center;
+	font-size: 12px;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+}

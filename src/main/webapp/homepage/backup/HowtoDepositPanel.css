@@ -1,0 +1,8 @@
+/*此文件对应HowtoDepositePanel.css，为维护方便，请勿删除*/
+#direction {
+	color: white;
+	text-align: left;
+}
+#direction .color-span {
+	color: #ff0000;
+}

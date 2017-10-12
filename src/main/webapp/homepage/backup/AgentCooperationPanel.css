@@ -1,0 +1,31 @@
+#direction .mtab {
+	background-color: #FF9900;
+}
+#direction {
+	padding: 10px;
+	color: white;
+	text-align: left;
+	line-height: 2;
+}
+#direction ul.mtab-menual {
+	margin: 10px 0;
+	padding: 0;
+}
+#direction ul.mtab-menual li {
+	border: 1px solid #FFBD5B;
+	display: inline;
+	cursor: pointer;
+	padding: 2px;
+	font-size: 12px;
+}
+#direction table {
+	text-align: center;
+	width: 576px;
+	border-collapse: collapse;
+}
+#direction table td {
+	border: 1px solid;
+}
+#direction #Union2 {
+	display: none;
+}

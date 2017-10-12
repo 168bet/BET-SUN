@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <title>菲博国际</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="/game/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/game/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/game/css/fullcalendar.css" rel="stylesheet" />
+    <link href="/game/css/unicorn.main.css" rel="stylesheet" />
+    <link href="/game/css/unicorn.grey.css" rel="stylesheet" class="skin-color" />
+    <!-- <link rel="stylesheet" type="text/css" href="/game/css/chat-room.css"> -->
+
+    <script src="/game/js/excanvas.min.js"></script>
+    <script src="/game/js/jquery.min.js"></script>
+    <script src="/game/js/jquery.ui.custom.js"></script>
+    <script src="/game/js/bootstrap.min.js"></script>
+    <script src="/game/js/jquery.flot.min.js"></script>
+    <script src="/game/js/jquery.flot.resize.min.js"></script>
+    <script src="/game/js/jquery.peity.min.js"></script>
+    <script src="/game/js/fullcalendar.min.js"></script>
+    <script src="/game/js/unicorn.dashboard.js"></script>
+    <script src="/game/js/jquery.cookie.js"></script>
+
+    <script src="/game/js/self/config.js"></script>
+    <script src="/game/js/self/masterPage.js"></script>
+    <script src="/game/js/self/authorityManage.js"></script>
+    <script src="/game/js/unicorn.js"></script>
+    <!-- // <script src="/game/js/self/chat-room.js"></script> -->
+    <script src="/game/js/self/custom-modal.js"></script>
+    <script src="/game/js/self/masterLanguageController.js"></script>
+</head>
+<body id="mainBody">
+    <div id="header">
+        <h1></h1>
+    </div>
+    <div id="user-nav" class="navbar navbar-inverse">
+        <div id="language-div">
+            <span class="language" data-word="language">语言</span>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger" data-toggle="dropdown">
+                    <span class="language" data-word="_language">中文</span>
+                </button>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a data-target="#" class="changelanguage" key-lan="zh-cn">
+                            <span class="language" data-word="chinese">中文</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-target="#" class="changelanguage" key-lan="en-us">
+                            <span class="language" data-word="english">英文</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="login-after">
+            <ul>
+                <li class="btn btn-inverse" id="btnShowMail">
+                    <a title="" href="#"> <i class="icon icon-cog"></i>
+                        <span class="text language" data-word="hello">你好</span>
+                        ,
+                        <span class="text" id="txtUserName"></span>
+                        <span class="text language" id="txtNewMail" data-word="checkMail">查看站内信</span>
+                        <span id="txtNewMailNum"></span>
+                    </a>
+                </li>
+                <li class="btn btn-inverse" id="btnExit">
+                    <a title="" href="#"> <i class="icon icon-share-alt"></i>
+                        <span class="text language" data-word="exit">退出</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="noticeBarDiv">
+        <table>
+            <td>
+                <span class="language" data-word="latestNotice">最新公告</span>
+            </td>
+            <td>
+                <marquee id="noticeBar" scrolldelay="5" scrollamount="2"></marquee>
+            </td>
+        </table>
+    </div>
+    <div id="sidebar">
+        <ul id="parentMenu">
+            <li class="submenu" id="accountInfo">
+                <a href="#">
+                    <i class="icon icon-th-list"></i>
+                    <span class="language" data-word="accountPreview">账户概览</span>
+                    <span class="label" id="accountInfoNum">2</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#" id="btnUserInfo" class="menuBtnItem">
+                            <span class="language" data-word="accountInfo">账户资料</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btnChangePassword" class="menuBtnItem">
+                            <span class="language" data-word="changePassword">修改密码</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="submenu" id="accountManage">
+                <a href="#">
+                    <i class="icon icon-th-list"></i>
+                    <span class="language" data-word="accountManage">账户管理</span>
+                    <span class="label language" id="accountManagerNum">6</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#" id="btnUnderlingManage" class="menuBtnItem">
+                            <span class="language" data-word="underlingManage">下线管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btnAddAgent" class="menuBtnItem">
+                            <span class="language" data-word="addAgent">新增代理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btnUserManage" class="menuBtnItem">
+                            <span class="language" data-word="memberManage">会员管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btnAddUser" class="menuBtnItem">
+                            <span class="language" data-word="addMember">新增会员</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btnChildAccountManage" class="menuBtnItem">
+                            <span class="language" data-word="childAccountManage">子帐号管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btnAddChildAccount" class="menuBtnItem">
+                            <span class="language" data-word="addChildAccount">新增子帐号</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="submenu" id="formManage">
+                <a href="#">
+                    <i class="icon icon-th-list"></i>
+                    <span class="language" data-word="checkForm">查看报表</span>
+                    <span class="label">4</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#" id="btnWinLossForm" class="menuBtnItem">
+                            <span class="language" data-word="winLossForm">输赢报表</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btnUserDealForm" class="menuBtnItem">
+                            <span class="language" data-word="customerDeal">客户交易</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btnCountRecordForm" class="menuBtnItem">
+                            <span class="language" data-word="countRecord">点数记录</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="btnGameResultForm" class="menuBtnItem">
+                            <span class="language" data-word="gameResult">游戏结果</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <iframe src="" id = "ifmContent" name="ifmContent" scrolling="no" onload="frameLoad()"></iframe>
+    <!--
+    <div id="chatRoom" class="chatRoom">
+    <div class="headBar">
+        <div class="chatTitle">
+            <span>
+                与
+                <span id="toName">鸣人</span>
+                聊天中
+            </span>
+        </div>
+        <div class="opt">
+            <ul>
+                <li class="chat-close"></li>
+                <li class="chat-minimize"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="upContent">
+            <ul class="chat-thread">
+                <li class="msgLeft">老师，我们今天学习色诱术吧！</li>
+                <li class="msgRight">...</li>
+                <li class="msgRight">找自来也大人去</li>
+            </ul>
+        </div>
+        <div class="downContent">
+            <div class="messageDialog">
+                <textarea id="messageContent" class="messageContent" autofocus="autofocus"></textarea>
+            </div>
+            <div class="btnDialog">
+                <div class="btn-div" id="btnSend">
+                    <a href="#">发送</a>
+                </div>
+                <div class="btn-div" id="btnClose">
+                    <a href="#">关闭</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="minChatRoom" class="minChatRoom resumeChat">
+    <div class="chatTitle">
+        <span>
+            与
+            <span id="toName">鸣人</span>
+            聊天中
+        </span>
+    </div>
+    <div class="opt">
+        <ul>
+            <li class="chat-close"></li>
+        </ul>
+    </div>
+</div>
+<div id="chatRoomBar" class="chatRoomBar">
+    <span>新消息</span>
+</div>
+-->
+</body>
+</html>

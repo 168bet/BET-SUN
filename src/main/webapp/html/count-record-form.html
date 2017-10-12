@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<title>公司名</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/game/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/game/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="/game/css/uniform.css" />
+	<link rel="stylesheet" href="/game/css/select2.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.main.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.grey.css" class="skin-color" />
+	<link rel="stylesheet" href="/game/css/bootstrap-datetimepicker.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<div id="in-content">
+        <div id="breadcrumb">
+            <a href="#"  style="cursor:default"class="current">
+                <span class="language">点数记录</span>
+            </a>
+        </div>
+		<div class="container-fluid">
+	<!--
+			<div class="row-fluid">
+				<div class="span1">
+					<label>
+						<span class="language" data-word="time">时间</span>
+						：
+					</label>
+				</div>
+				<div class="span3">
+					<div class="row">
+						<select id="selectdate">
+							<option class="language" data-word="freeDate">任意日期</option>
+							<option class="language" data-word="customDate">自定义日期</option>
+							<option class="language" data-word="today">今天</option>
+							<option class="language" data-word="yesterday">昨天</option>
+							<option class="language" data-word="thisWeek">本星期</option>
+							<option class="language" data-word="lastWeek">上星期</option>
+							<option class="language" data-word="thisMonth">本月</option>
+							<option class="language" data-word="lastMonth">上月</option>
+						</select>
+					</div>
+				</div>
+				<div class="span8">
+					<div class="row" id="daterangeenabled" style="display:none">
+						<div class="span4 offset1 controls input-append input-prepend date" id="begindate" data-date="" data-date-format="yyyy-mm-dd">
+							<span class="add-on language" data-word="startDate">起始日期：</span>
+							<input type="text" class="input-small" value="">
+							<span class="add-on"> <i class="icon-th"></i>
+							</span>
+						</div>
+						<div class="span5 offset2 controls input-append input-prepend date" id="enddate" data-date="" data-date-format="yyyy-mm-dd">
+							<span class="add-on language" data-word="endDate">结束日期：</span>
+							<input type="text" class="input-small" value="">
+							<span class="add-on">
+								<i class="icon-th"></i>
+							</span>
+						</div>
+					</div>
+					<div class="row" id="daterangedisabled" style="display:block">
+						<div class="span4 offset1 controls input-append input-prepend" id="begindate">
+							<span class="add-on language" data-word="startDate">起始日期：</span>
+							<input type="text" class="input-small" value="" disabled="disabled">
+							<span class="add-on">
+								<i class="icon-th"></i>
+							</span>
+						</div>
+						<div class="span5 offset2 controls input-append input-prepend" id="enddate">
+							<span class="add-on language" data-word="endDate">结束日期：</span>
+							<input type="text" class="input-small" value="" disabled="disabled">
+							<span class="add-on">
+								<i class="icon-th"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span1">
+					<label>
+						<span class="language" data-word="catolog">类型</span>
+						：
+					</label>
+				</div>
+				<div class="span3">
+					<div class="row">
+						<select id="selecttype">
+							<option class="language" data-word="all">全部</option>
+							<option class="language" data-word="agent">代理</option>
+							<option class="language" data-word="member">会员</option>
+						</select>
+					</div>
+				</div>
+				<div class="span4">
+					<div class="row">
+						<div class="offset2 input-prepend">
+							<span class="add-on language" data-word="userName">用户名：</span>
+							<input type="text" class="input-large language" placeholder="用户名" id="accountname" data-word="userName"></div>
+					</div>
+				</div>
+				<div class="span4">
+					<div class="row">
+						<div class="offset10">
+							<button class="btn btn-success" id="querymoneystatement">
+								<span class="language" data-word="search">查询</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	-->
+
+			<form id="searchForm" name="searchForm" class="row-fluid">
+				<div class="horizon controls input-append input-prepend">
+					<span class="add-on language" data-word="fastChoose">快速选择</span>
+					<select id="selectdate">
+						<option class="language" data-word="all" value="0">全部</option>
+						<option class="language" data-word="today" value="1">今天</option>
+						<option class="language" data-word="yesterday" value="2">昨天</option>
+						<option class="language" data-word="thisWeek" value="3">本星期</option>
+						<option class="language" data-word="lastWeek" value="4">上星期</option>
+						<option class="language" data-word="thisMonth" value="5">本月</option>
+						<option class="language" data-word="lastMonth" value="6">上月</option>
+					</select>
+				</div>
+				<div class="horizon controls input-append input-prepend date" id="begindate">
+					<span class="add-on language" data-word="startDate">起始日期</span>
+					<input type="text" class="input-medium" id="txtBeginDate" name="txtBeginDate" />
+					<span class="add-on"> <i class="icon-th"></i>
+					</span>
+				</div>
+				<div class="horizon controls input-append input-prepend date" id="enddate">
+					<span class="add-on language" data-word="endDate">结束日期</span>
+					<input type="text" class="input-medium" id="txtEndDate" name="txtEndDate">
+					<span class="add-on"> <i class="icon-th"></i>
+					</span>
+				</div>
+				<div class="horizon controls input-append input-prepend">
+					<span class="add-on language" data-word="userName">用户名</span>
+					<input type="text" class="input-large language" placeholder="用户名" id="userName" name="userName" data-word="userName"/>
+				</div>
+				<div class="horizon controls">
+					<button type="submit" class="btn btn-success" id="btnSearch">
+						<span class="language" data-word="search">查询</span>
+					</button>
+				</div>
+				<div class="horizon controls">
+					<button type="button" class="btn btn-success" id="btnEmpty">
+						<span class="language" data-word="empty">清空</span>
+					</button>
+				</div>
+			</form>
+			<div class="widget-box">
+				<div class="widget-title">
+					<h5><span class="language" data-word="">点数记录报表</span></h5>
+				</div>
+				<div class="widget-content nopadding">
+					<div class="">
+						<div class="dataTables_length">
+							<label>
+								<span class="language" data-word="display">显示</span>
+								<select name="datatable-length" id="selectlines" aria-controls="DataTables_Table_0">
+									<option value="10">10</option>
+									<option value="25">25</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+								<span class="language" data-word="row">行</span>
+							</label>
+						</div>
+					</div>
+					<table class="table table-bordered data-table">
+						<thead id="momeyresulthead">
+							<tr>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody id="moneyresultbody">
+							<tr>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/game/js/jquery.min.js"></script>
+	<script src="/game/js/jquery.ui.custom.js"></script>
+	<script src="/game/js/bootstrap.min.js"></script>
+	<script src="/game/js/jquery.uniform.js"></script>
+	<script src="/game/js/select2.min.js"></script>
+	<script src="/game/js/jquery.dataTables.min.js"></script>
+	<script src="/game/js/unicorn.js"></script>
+	<script src="/game/js/unicorn.tables.js"></script>
+	<script src="/game/js/self/dateFormat.js"></script>
+	<script src="/game/js/bootstrap-datetimepicker.js"></script>
+	<script src="/game/js/self/dateSelected.js"></script>
+	<script src="/game/js/language/bootstrap-datetimepicker.zh-CN.js"></script>
+	<script src="/game/js/self/moneyStatementManager.js"></script>
+	<script src="/game/js/common/tools.js"></script>
+	<script src="/game/js/self/languageController.js"></script>
+	<script src="/game/js/jquery.validate.js"></script>
+	<script src="/game/js/jquery.metadata.js"></script>
+	<script src="/game/js/self/customValidator.js"></script>
+	<script src="/game/js/language/validator-message-zh-cn.js"></script>
+
+</body>
+</html>

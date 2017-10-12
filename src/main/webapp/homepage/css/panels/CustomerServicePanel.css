@@ -1,0 +1,31 @@
+.fb-customer-box{
+
+}
+
+.fb-customer-box > h1{
+	color: yellow;
+	font-size: 30px;
+}
+
+.fb-customer-box > p{
+	color: #FFF;
+	font-size: 18px;
+}
+
+.fb-customer-box > hr{
+	border-top: 1px solid yellow;
+}
+
+.fb-customer-login{
+	width: 100px;
+	margin: 30px auto;
+	color: #FFF;
+	background-color: #2f8171;
+}
+.fb-customer-login:focus{
+	font-weight: bold;
+	color: #FFF;
+}
+.fb-customer-login:hover{
+	color: #FFF;
+}

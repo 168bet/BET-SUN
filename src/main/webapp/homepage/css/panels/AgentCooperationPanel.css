@@ -1,0 +1,35 @@
+.fb-acfooter-box {
+}
+.fb-acfooter-box .fb-content-box {
+}
+.fb-acfooter-box .fb-content-box #direction {
+	padding: 10px;
+	color: white;
+	text-align: left;
+	line-height: 2;
+}
+.fb-acfooter-box .fb-content-box #direction .mtab {
+	background-color: #FF9900;
+}
+.fb-acfooter-box .fb-content-box #direction ul.mtab-menual {
+	margin: 10px 0;
+	padding: 0;
+}
+.fb-acfooter-box .fb-content-box #direction ul.mtab-menual li {
+	border: 1px solid #FFBD5B;
+	display: inline;
+	cursor: pointer;
+	padding: 2px;
+	font-size: 12px;
+}
+.fb-acfooter-box .fb-content-box #direction table {
+	text-align: center;
+	width: 576px;
+	border-collapse: collapse;
+}
+.fb-acfooter-box .fb-content-box #direction table td {
+	border: 1px solid;
+}
+.fb-acfooter-box .fb-content-box #direction #Union2 {
+	display: none;
+}

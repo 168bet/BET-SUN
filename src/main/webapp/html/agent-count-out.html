@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<title>公司名</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/game/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/game/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="/game/css/fullcalendar.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.main.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.grey.css" class="skin-color" />
+	<meta http-equiv="Content-Type" content="text/html;
+charset=utf-8" />
+</head>
+<body>
+	<div id="in-content">
+		<div id="breadcrumb">
+			<a href="#"  style="cursor:default"class="current">
+				<span class="language">点数提取</span>
+			</a>
+		</div>
+		<div class="container-fluid">
+			<form id="agentCountOutForm" class="form-horizontal" role="form">
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="moneyPwd">取款密码</span>
+						：
+					</label>
+					<div class="controls">
+						<input name="moneyPwd" type="password" placeholder="取款密码" class="language" data-word="moneyPwd" id="moneyPwd"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="accountName">开户姓名</span>
+						：
+					</label>
+					<div class="controls">
+						<input name="accountName" type="text" placeholder="开户姓名" class="language" data-word="accountName" id="accountName"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="cardType">借记卡种类</span>
+						：
+					</label>
+					<div class="controls">
+						<select id="cardType">
+							<option class="language" data-word="gongshang" value="0">中国工商银行</option>
+							<option class="language" data-word="nongye" value="1">中国农业银行</option>
+							<option class="language" data-word="jianshe" value="2">中国建设银行</option>
+							<option class="language" data-word="zhaoshang" value="3">中国招商银行</option>
+							<option class="language" data-word="jaotong" value="4">中国交通银行</option>
+							<option class="language" data-word="youzheng" value="5">中国邮政银行</option>
+							<option class="language" data-word="minsheng" value="6">中国民生银行</option>
+							<option class="language" data-word="zhongguo" value="7">中国银行</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="cardNum">借记卡号</span>
+						：
+					</label>
+					<div class="controls">
+						<input name="cardNum" type="text" placeholder="借记卡号" class="language" data-word="cardNum" id="cardNum"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="cardArea">开户地区</span>
+						：
+					</label>
+					<div class="controls">
+						<select id="cardArea">
+							<option class="language" data-word="beijing" value="1">北京</option>
+							<option class="language" data-word="shanghai" value="2">上海</option>
+							<option class="language" data-word="tianjin" value="3">天津</option>
+							<option class="language" data-word="chongqing" value="4">重庆</option>
+							<option class="language" data-word="guangdong" value="5">广东</option>
+							<option class="language" data-word="hebei" value="6">河北</option>
+							<option class="language" data-word="henan" value="7">河南</option>
+							<option class="language" data-word="jiangsu" value="8">江苏</option>
+							<option class="language" data-word="zhejiang" value="9">浙江</option>
+							<option class="language" data-word="shandong" value="10">山东</option>
+							<option class="language" data-word="shanxi" value="11">山西</option>
+							<option class="language" data-word="guangxi" value="12">广西</option>
+							<option class="language" data-word="fujian" value="13">福建</option>
+							<option class="language" data-word="neimenggu" value="14">内蒙古</option>
+							<option class="language" data-word="heilongjiang" value="15">黑龙江</option>
+							<option class="language" data-word="liaoning" value="16">辽宁</option>
+							<option class="language" data-word="jilin" value="17">吉林</option>
+							<option class="language" data-word="xinjiang" value="18">新疆</option>
+							<option class="language" data-word="gansu" value="19">甘肃</option>
+							<option class="language" data-word="ningxia" value="20">宁夏</option>
+							<option class="language" data-word="shanxi" value="21">山西</option>
+							<option class="language" data-word="hubei" value="22">湖北</option>
+							<option class="language" data-word="hunan" value="23">湖南</option>
+							<option class="language" data-word="jiangxi" value="24">江西</option>
+							<option class="language" data-word="sichuang" value="25">四川</option>
+							<option class="language" data-word="guizhou" value="26">贵州</option>
+							<option class="language" data-word="yunnan" value="27">云南</option>
+							<option class="language" data-word="xizang" value="28">西藏</option>
+							<option class="language" data-word="qinghai" value="29">青海</option>
+							<option class="language" data-word="hainan" value="30">海南</option>
+							<option class="language" data-word="anhui" value="31">安徽</option>
+							<option class="language" data-word="xianggang" value="32">香港</option>
+							<option class="language" data-word="aomen" value="33">澳门</option>
+							<option class="language" data-word="qita" value="34">其他</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="cardCity">开户市</span>
+						：
+					</label>
+					<div class="controls">
+						<input name="cardCity" type="text" placeholder="开户市" class="language" data-word="cardCity" id="cardCity"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="cardSite">开户网点</span>
+						：
+					</label>
+					<div class="controls">
+						<input name="cardSite" type="text" placeholder="开户网点" class="language" data-word="cardSite" id="cardSite"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="money">取款金额</span>
+						：
+					</label>
+					<div class="controls">
+						<input name="money" type="text" placeholder="取款金额" class="language" data-word="money" id="money"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class=" input-append">
+						<label class="control-label">
+							<span class="language" data-word="idCode">验证码</span>
+							：
+						</label>
+						<div class="controls">
+							<input name="idCode" type="text" placeholder="验证码" class="border-radius language" data-word="idCode" id="idCode"/>
+							<img class="code-img" id="imgCode"/>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word=""></span>
+					</label>
+					<div class="controls">
+						<input name="drawInfo" type="checkbox" class="language" data-word="drawInfo" id="drawInfo"/>
+						我已查看提款须知，并已清楚了解了
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-lable"></label>
+					<div class="controls">
+						<button type="submit" class="btn btn-success btn-medium" id="drawMoneySubmit">
+							<span class="language" data-word="commit">提交</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="/game/js/excanvas.min.js"></script>
+	<script src="/game/js/jquery.min.js"></script>
+	<script src="/game/js/jquery.ui.custom.js"></script>
+	<script src="/game/js/bootstrap.min.js"></script>
+	<script src="/game/js/jquery.flot.min.js"></script>
+	<script src="/game/js/jquery.flot.resize.min.js"></script>
+	<script src="/game/js/jquery.peity.min.js"></script>
+	<script src="/game/js/fullcalendar.min.js"></script>
+	<script src="/game/js/unicorn.js"></script>
+	<script src="/game/js/unicorn.dashboard.js"></script>
+	<script src="/game/js/self/languageController.js"></script>
+	<script src="/game/js/jquery.validate.js"></script>
+	<script src="/game/js/jquery.metadata.js"></script>
+	<script src="/game/js/self/agentDrawMoney.js"></script>
+	<script src="/game/js/self/customValidator.js"></script>
+	<script src="/game/js/language/validator-message-zh-cn.js"></script>
+
+</body>
+</html>

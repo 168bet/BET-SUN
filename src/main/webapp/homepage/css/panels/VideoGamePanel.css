@@ -1,0 +1,9 @@
+.fb-vgame-box{
+	
+}
+
+.fb-vgame-box > img{
+	height: 150px;
+	width: 24%;
+	margin: .5%;
+}

@@ -1,0 +1,16 @@
+.fb-pgame-box {
+	background: rgba(203, 203, 203, 1);
+}
+.fb-pgame-box .fb-span-left {
+	float: left;
+	display: block;
+	color: black;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.fb-pgame-box .fb-content-box {
+	background: #efe697;
+	padding: 20px;
+	height: 1%;
+	overflow: hidden;
+}

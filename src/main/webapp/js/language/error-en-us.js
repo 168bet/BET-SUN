@@ -1,0 +1,33 @@
+ERROR_LANGUAGE_CONFIG = {
+	//定义ajax error返回信息
+	"0": "Can't access the database",
+	"200": "Success",
+	"501": "Unknown error",
+	"601": "authority limited",
+	"651": "The username is not exist",
+	"652": "Password incorrect",
+	"653": "The user is not exist",
+	"654": "The user is locked",
+	"655": "The user is disabled",
+	"656": "5 times wrong password, the user is locked",
+	"657": "The username is regestered",
+	"701": "Can't find the agent by uuid",
+	"801": "Role error",
+	"900": "Generate validate code error",
+	"901": "Wrong Validate Code",
+	"902": "Validate code time out",
+
+	//定义一般信息
+	"1000": "Add admin successed",
+	"1001": "Add agent successed",
+	"1002": "Add child account successed",
+	"1003": "Add member successed",
+	"1004": "Modify successed",
+	"1005": "Delete successed",
+	"1006": "Wrong password",
+	"1007": "Charge money successed",
+	"1008": "Publish successed",
+	"1009": "Send successed",
+	"1010": "Plese choose receiver",
+	"1011": "Submit successed, please waiting for being approved",
+}

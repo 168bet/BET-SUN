@@ -1,0 +1,445 @@
+@-webkit-keyframes rotate-animation
+{
+	from{
+		-webkit-transform:perspective(500px) rotateY(0deg);
+	}
+	to{
+		-webkit-transform:perspective(500px) rotateY(360deg);
+	}
+}
+
+@keyframes rotate-animation
+{
+	from{
+		transform:perspective(500px) rotateY(0deg);
+	}
+	to{
+		transform:perspective(500px) rotateY(360deg);
+	}
+}
+
+@-webkit-keyframes circle-rotate-animation-1
+{
+	from{
+		-webkit-transform:perspective(500px) rotateY(0deg) rotateX(60deg) rotateZ(0deg);
+	}
+	24%{
+		-webkit-transform:perspective(500px) rotateY(90deg) rotateX(60deg) rotateZ(-360deg);
+	}
+	50%{
+		-webkit-transform:perspective(500px) rotateY(180deg) rotateX(60deg) rotateZ(-720deg);
+	}
+	75%{
+		-webkit-transform:perspective(500px) rotateY(270deg) rotateX(60deg) rotateZ(-1080deg);
+	}
+	to{
+		-webkit-transform:perspective(500px) rotateY(360deg) rotateX(60deg) rotateZ(-1440deg);
+	}
+}
+
+@-webkit-keyframes circle-rotate-animation-2
+{
+	from{
+		-webkit-transform:perspective(500px) rotateY(0deg) rotateX(-30deg) rotateZ(130deg) rotateX(180deg);
+	}
+	24%{
+		-webkit-transform:perspective(500px) rotateY(90deg) rotateX(-30deg) rotateZ(490deg) rotateX(180deg);
+	}
+	50%{
+		-webkit-transform:perspective(500px) rotateY(180deg) rotateX(-30deg) rotateZ(850deg) rotateX(180deg);
+	}
+	75%{
+		-webkit-transform:perspective(500px) rotateY(270deg) rotateX(-30deg) rotateZ(1210deg) rotateX(180deg);
+	}
+	to{
+		-webkit-transform:perspective(500px) rotateY(360deg) rotateX(-30deg) rotateZ(1570deg) rotateX(180deg);
+	}
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	text-align: center;
+	font-family: "宋体", Arial;
+	font-size: 12px;
+	background-color: rgb(78,4,5);
+	padding: 0px;
+	margin: 0px;
+}
+.panel{
+	margin: 0px;
+	border-radius:0px;
+}
+.clickable{
+	cursor: pointer;
+}
+/* 整体 */
+.fb-content{
+	width: 1032px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+
+/*头部*/
+.fb-header{
+	width: 100%;
+	height: 124px;
+	background-color: #0a0a0a;
+	position: relative;
+	background-image: url(../img/fb-head-background.png);
+}
+
+.fb-header > div.fb-content{
+	background-image: url(../img/fb-head-content.png);
+	background-repeat: repeat-x;
+}
+
+.fb-header-someone{
+	background-image: url(../img/fb-header-someone.png);
+	height: 100%;
+	width: 250px;
+	float: left;
+	background-repeat: no-repeat;
+}
+
+.fb-logo{
+	float: left;
+	width: 330px;
+	height: 100px;
+	padding-top: 20px;
+}
+
+/*登录*/
+.fb-login-box{
+	margin-top: 30px;
+	width: 400px;
+	float: right;
+}
+.fb-login-box > input{
+	width: 120px;
+	height: 19px;
+	line-height: 19px;
+	border: 1px solid #472524;
+	margin: 5px 3px;
+	background-color: rgba(0,0,0,0.5);
+	color: #FFF;
+	float: left;
+}
+.fb-login-box > button.login{
+	width: 83px;
+	height: 29px;
+	line-height: 19px;
+	background-image: url(../img/fb-login-btn.png);
+	border: 0px solid #472524;
+	float: left;
+}
+.fb-login-box > button.register{
+	width: 61px;
+	height: 29px;
+	line-height: 19px;
+	background-image: url(../img/fb-register-btn.png);
+	border: 0px solid #472524;
+	float: left;
+}
+
+.fb-login-info-box{
+	margin-top: -20px;
+	text-align: left;
+	line-height: 22px;
+	padding-left: 50px;
+}
+
+.fb-login-info-box > a{
+	margin: 0 7px;
+	color: #FFF;
+	cursor: pointer;
+}
+.fb-login-info-inandout{
+	color: #FFFF99;
+	margin: 0 5px;
+}
+.fb-login-info-logout{
+	color: #00FF00;
+	margin: 0 5px;
+}
+
+.fb-login-info-box > a:hover{
+	color: #B0E8FF;
+	text-decoration: none;
+}
+.fb-login-func{
+	width: 398px;
+	height: 27px;
+	margin-top: 10px;
+	float: left;
+	background-image: url(../img/fb-login-func.png);
+	line-height: 27px;
+	text-align: left;
+	font-weight: bold;
+	color: #000000;
+	font-family: "微软雅黑";
+}
+.fb-login-func > div{
+	width: 56px;
+	display: inline-block;
+	margin: 0 5px;
+}
+.fb-login-info-box span{
+	font-family: "宋体", Arial;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+/*导航栏*/
+.fb-navigation{
+	width: 100%;
+	height: 36px;
+	background-image: url(../img/navigation/fb-navigation-bg.png);
+}
+.fb-navigation-clock{
+	width: 50px;
+	height: 100%;
+	float: left;
+	background: url(../img/navigation/fb-navigation-clock.png) no-repeat 90% 34%;
+}
+.fb-navigation-timer{
+	margin: 0 5px;
+	height: 36px;
+	float: left;
+	color: #cc9227;
+	line-height: 36px;
+	font-family: "宋体", Arial;
+	font-size: 12px;
+}
+.fb-navigation-item{
+	height: 36px;
+	width: 116px;
+	float: left;
+	background-position-x: center;
+	background-repeat: no-repeat;
+}
+
+/*主体部分*/
+.fb-container{
+	padding-top: 10px;
+	min-height: 450px;
+	background-image: url(../img/container/bg.png);
+	background-repeat: repeat-x;
+}
+.fb-container-left{
+	width:200px;
+	float: left;
+	position: relative;
+	background-color: #3f2a12;
+	min-height: 500px;
+}
+.fb-container-left > div{
+	height: 31px;
+	width: 187px;
+	margin: 0 auto;
+}
+.fb-container-right{
+	width:832px;
+	position: relative;
+	float: right;
+}
+
+/*注脚*/
+.fb-footer{
+	width: 100%;
+	bottom: 0px;
+	margin: 0px auto;
+	background-image: url(../img/fb-footer-bg.png);
+	background-repeat: repeat-x;
+	background-color: rgb(44,0,1);
+	padding-top: 20px;
+	display: block;
+}
+
+.fb-footer-content{
+	height: 100%;
+	display: inline-block;
+	margin: 0 auto;
+}
+.fb-footer-info{
+	margin: 10px auto;
+	font-size: 6px;
+	color: #7a7267;
+}
+
+.fb-footer-link>a{
+	margin: 0px 12px;
+	font-size: 12px;
+	color: #FFF;
+}
+.fb-footer-link>a:hover{
+	cursor: pointer;
+	color: #7a7267;
+	text-decoration: none;
+}
+
+.fb-footer-ads{
+	margin: 0px 12px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+}
+.fb-footer-ads>img{
+	margin: 0px 10px;
+}
+.fb-footer-dummy{
+	margin-top: 10px;
+	height: 20px;
+	background-color: #0a0a0a;
+	width: 100%;
+}
+
+.fb-floating{
+	position: fixed;
+	cursor: pointer;
+}
+.fb-floating.left{
+	width: 137px;
+	height: 338px;
+	top:70px;
+	background-image: url(../img/fb-float-left.png);
+	left:5px;
+}
+.fb-floating.right{
+	width: 155px;
+	height: 307px;
+	top:130px;
+	background-image: url(../img/fb-float-right.png);
+	background-repeat: no-repeat;
+	right:5px;
+}
+
+/*通用组件*/
+/*按钮*/
+.fb-button{
+	font-size:20px;
+	color: #fff;
+	background-color: #2f8172;
+	text-align: center;
+	display: inline-block;
+}
+.fb-button:active{
+	color: #FFF; 
+}
+.fb-button:hover{
+	background-color: #255f53;
+	color: #FFF; 
+}
+/*输入框*/
+.fb-input-box{
+	padding: 10px;
+	width: 100%;
+}
+.fb-input-label{
+	padding-right: 25px;
+	width: 140px;
+	color: #FFF;
+	text-align: right;
+	font-size: 12px;
+	display: inline-block;
+}
+.fb-input-label.required::before{
+	content: "　";
+	background-image: url('../img/required.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.fb-input-text{
+	width: 200px;
+}
+
+/*悬浮警告*/
+.fb-float-warning{
+	color: #0F0;
+	font-size: 25px;
+	width: 100%;
+	margin-top: 170px;
+	position: fixed;
+	z-index: 99999;
+}
+
+/*模态弹出登陆框*/
+.fb-model-background{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.3);
+	position: fixed;
+	z-index: 9999;
+}
+.fb-login-input-panel{
+	width: 400px;
+	background-color: #0a0a0a;
+	margin: 0 auto;
+	display: inline-block;
+}
+.fb-login-input-panel > h1{
+	color: #FFF;
+	font-size: 25px;
+	margin: 5px;
+}
+.fb-login-input-box{
+	background-color: #1f574e;
+	margin: 10px;
+	padding: 10px;
+}
+.fb-button.login-panel{
+	margin: 10px 0px 5px 0px;
+	width: 150px;
+	font-size: 15px;
+}
+
+.fb-breaker-titile{
+	float: left;
+	width: 100px;
+	line-height: 20px;
+	font-size: 20px;
+	color: #f1e14e;
+}
+
+.fb-breaker-line{
+	float: left;
+	width: 100%;
+	margin-left: -100px;
+	padding-left: 100px;
+}
+
+.fb-breaker-line > hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 0;
+	border-top: 1px solid #f1e14e;
+}
+
+.fb-pswdstnth-label{
+	padding-left: 180px;
+	padding-right: 20px;
+	color: #FFF;
+	text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+}
+.fb-pswdstnth-strenth{
+	text-align: center;
+	font-size: 15px;
+	display: inline-block;
+	width: 80px;
+	margin-left: 1px;
+	background-color: rgb(238, 238, 238);
+}
+.fb-pswdstnth-strenth.weak{
+	background-color: #e7bb72;
+}
+.fb-pswdstnth-strenth.normal{
+	background-color: #df945d;
+}
+.fb-pswdstnth-strenth.strong{
+	background-color: #e25e38;
+}

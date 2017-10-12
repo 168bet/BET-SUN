@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <title>菲博</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="/game/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/game/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="/game/css/unicorn.main.css" rel="stylesheet" />
+    <link href="/game/css/unicorn.grey.css" rel="stylesheet" class="skin-color" />
+    <link href="/game/css/login.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/game/js/jquery.min.js"></script>
+    <script src="/game/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/game/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/game/js/self/config.js"></script>
+    <script type="text/javascript" src="/game/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="/game/js/jquery.metadata.js"></script>
+    <script src="/game/js/unicorn.js"></script>
+    <script type="text/javascript" src="/game/js/self/customValidator.js"></script>
+    <script type="text/javascript" src="/game/js/language/validator-message-zh-cn.js"></script>
+    <script type="text/javascript" src="/game/js/self/masterLanguageController.js"></script>
+    <script type="text/javascript" src="/game/js/self/login.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1></h1>
+    </div>
+    <div id="user-nav" class="navbar navbar-inverse">
+        <div id="language-div">
+            <span class="language" data-word="language">语言</span>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger" data-toggle="dropdown">
+                    <span class="language" data-word="_language">中文</span>
+                </button>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a data-target="#" class="changelanguage" key-lan="zh-cn">
+                            <span class="language" data-word="chinese">中文</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-target="#" class="changelanguage" key-lan="en-us">
+                            <span class="language" data-word="english">英文</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="login-content">
+        <form id="loginForm" name="loginForm">
+            <table>
+                <tr>
+                    <td>
+                        <span class="language" data-word="userName">用户名</span>
+                        ：
+                    </td>
+                    <td>
+                        <input type="text" class="input-c" id="txtName" name="txtName" autofocus="autofocus"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="language" data-word="password">密码</span>
+                        ：
+                    </td>
+                    <td>
+                        <input type="password" class="input-c" id="txtPwd" name="txtPwd" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="language" data-word="validateCode">验证码</span>
+                        ：
+                    </td>
+                    <td>
+                        <div>
+                            <input type="text" id="txtValidate" id="txtValidate" name="txtValidate" />
+                            <img id="imgValidate" />
+                        </div>
+                    </td>
+                </tr>
+            </div>
+        </table>
+        <div class="optDiv">
+            <button class="btn btn-primary btn-medium" type="submit" id="login">
+                <span class="language" data-word="login">登陆</span>
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>

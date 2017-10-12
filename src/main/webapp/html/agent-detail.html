@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="ch">
+	<head>
+		<title>公司名</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/game/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/game/css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="/game/css/fullcalendar.css" />	
+		<link rel="stylesheet" href="/game/css/unicorn.main.css" />
+		<link rel="stylesheet" href="/game/css/unicorn.grey.css" class="skin-color" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+	<body>
+		<div id="in-content">
+            <div id="breadcrumb">
+                <a href="#"  style="cursor:default"class="current">
+                    <span class="language">代理详细信息</span>
+                </a>
+            </div>
+			<div class="container-fluid">
+				<form class="form-horizontal" role="form">
+                    <div class="form-group">
+					    <label class="control-label">
+                            <span class="language" data-word="account">账号</span>
+                            ：
+                        </label>
+                        <div class="controls">
+                            <input type="text" disabled="true" id="username"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">
+                            <span class="language" data-word="realCount">真人点数</span>
+                            ：
+                        </label>
+                        <div class="controls">
+                            <input type="text" disabled="true" id="money"/>
+                        </div>
+                    </div>
+                    <div class="control-group">
+					    <label class="control-label">
+                            <span class="language" data-word="phone">电话</span>
+                            ：
+                        </label>
+                        <div class="controls">
+                            <input type="text" id="telephone"/>
+                            <span class="help-inline" id="telephonehelpinline"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+					    <label class="control-label">
+                            <span class="language" data-word="email">邮箱</span>
+                            ：
+                        </label>
+                        <div class="controls">
+                            <input type="text" id="email"/>
+                            <span class="help-inline" id="emailhelpinline"></span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">
+                            <span class="language" data-word="washCodeCommissionRate">洗码佣金比例</span>
+                            ：
+                        </label>
+                        <div class="controls">
+                        	<div class="input-append">
+                            	<input type="text" id="washcodepercent"/>
+								<span class="add-on">%</span>
+							</div>
+							<div>
+                            	<span class="help-inline" id="washcodepercenthelpinline" style="display:none"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">
+                            <span class="language" data-word="rebate">返点</span>
+                            ：
+                        </label>
+                        <div class="controls">
+                        	<div class="input-append">
+                            	<input type="text" id="rebate"/>
+								<span class="add-on">%</span>
+                        	</div>
+                        	<div>
+                            	<span class="help-inline" id="rebatehelpinline"  style="display:none"></span>
+                        	</div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                    	<label class="control-lable"></label>
+                    	<div class="controls">
+                    		<button type="submit" class="btn btn-warning btn-medium" id="modifyagentinfo" disabled="true">
+                                <span class="language" data-word="change">修改</span>
+                            </button>
+                    	</div>
+                    </div>
+				</form>
+			</div>
+		</div>
+		
+        <script src="/game/js/excanvas.min.js"></script>
+        <script src="/game/js/jquery.min.js"></script>
+        <script src="/game/js/jquery.ui.custom.js"></script>
+        <script src="/game/js/bootstrap.min.js"></script>
+        <script src="/game/js/jquery.flot.min.js"></script>
+        <script src="/game/js/jquery.flot.resize.min.js"></script>
+        <script src="/game/js/jquery.peity.min.js"></script>
+        <script src="/game/js/fullcalendar.min.js"></script>
+        <script src="/game/js/unicorn.js"></script>
+        <script src="/game/js/unicorn.dashboard.js"></script>
+        <script src="/game/js/self/agentDetail.js"></script>
+        <script src="/game/js/self/languageController.js"></script>
+		
+	</body>
+</html>

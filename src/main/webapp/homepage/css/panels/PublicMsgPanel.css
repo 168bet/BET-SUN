@@ -1,0 +1,39 @@
+.fb-pmsg-table{
+	border-spacing: 0px;
+}
+.fb-pmsg-head{
+	background: #004d99;
+	color: #FFF;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.fb-pmsg-head{
+	color: #FFF;
+	text-align: center;
+	border-color: gray;
+}
+.fb-pmsg-head  th{
+	width: 100%;
+	font-weight: normal;
+	text-align: center;
+	border-top:1px solid #FFF ;
+	border-left: 1px solid #FFF;
+}
+
+.fb-pmsg-body{
+	background: #FFF;
+	color: #000;
+	text-align: center;
+}
+.fb-pmsg-body tr{
+	height: 30px;
+}
+
+.fb-pmsg-body td{
+	height: 30px;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+}

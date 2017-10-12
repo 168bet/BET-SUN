@@ -1,0 +1,96 @@
+#ContentBlock {
+	width: 100%;
+	background: #efe697;
+}
+#ContentBlock h2 {
+	color: #FF0000;
+}
+#ContentBlock table {
+	cellspacing: 1px;
+	cellpadding: 1px;
+	text-align: center;
+}
+#ContentBlock table tr {
+	background: #797021;
+}
+#ContentBlock table td {
+	background: #ffff99;
+	color: #ff0000;
+}
+#ContentBlock #table1 {
+	width: 634px;
+}
+#ContentBlock #table1 tr td {
+	height: 30px;
+}
+#ContentBlock #table1 tr td:nth-child(1) {
+	width: 127px;
+}
+#ContentBlock #table1 tr td:nth-child(2) {
+	width: 166;
+}
+#ContentBlock #table1 tr td:nth-child(3) {
+	width: 130;
+}
+#ContentBlock #table1 tr td:nth-child(4) {
+	width: 213;
+}
+#ContentBlock #table2 {
+	width: 634px;
+}
+#ContentBlock #table2 tr td {
+	height: 30px;
+}
+#ContentBlock #table2 tr td:nth-child(1) {
+	width: 127px;
+}
+#ContentBlock #table2 tr td:nth-child(2) {
+	width: 166;
+}
+#ContentBlock #table2 tr td:nth-child(3) {
+	width: 97;
+}
+#ContentBlock #table2 tr td:nth-child(4) {
+	width: 276;
+}
+#ContentBlock #table2 tr td:nth-child(5) {
+	width: 276;
+}
+#ContentBlock #table3 {
+	width: 618px;
+	height: 126px;
+}
+#ContentBlock #table3 tr td {
+	height: 30px;
+}
+#ContentBlock #table3 tr:first-of-type td {
+	height: 30px;
+	background: #ffcc00;
+}
+#ContentBlock #table3 tr td:nth-child(1) {
+	width: 102px;
+}
+#ContentBlock #table3 tr td:nth-child(2) {
+	width: 102px;
+}
+#ContentBlock #table3 tr td:nth-child(3) {
+	width: 103px;
+}
+#ContentBlock #table3 tr td:nth-child(4) {
+	width: 103px;
+}
+#ContentBlock #table3 tr td:nth-child(5) {
+	width: 103px;
+}
+#ContentBlock #table4 {
+	width: 634px;
+}
+#ContentBlock #table4 tr td {
+	height: 30px;
+}
+#ContentBlock #table4 tr td:nth-child(1) {
+	width: 50%;
+}
+#ContentBlock #table4 tr td:nth-child(2) {
+	width: 50%;
+}

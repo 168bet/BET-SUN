@@ -1,0 +1,45 @@
+.fb-rfooter-box {
+}
+.fb-rfooter-box .fb-content-box {
+}
+.fb-rfooter-box .fb-content-box a {
+	color: white;
+}
+.fb-rfooter-box .fb-content-box a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: blue;
+}
+.fb-rfooter-box .fb-content-box .rules-content {
+	color: white;
+	text-align: left;
+	padding: 10px;
+}
+.fb-rfooter-box .fb-content-box .rules-content .rulesTopBg {
+	width: 753px;
+	height: 30px;
+	margin: 0 0 14px 25px;
+	background: url(../../img/rules/rulesTopBg.jpg) repeat-x left top;
+}
+.fb-rfooter-box .fb-content-box .rules-content .rulesTopBg div {
+	width: 120px;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+.fb-rfooter-box .fb-content-box .rules-content .ruleBg {
+	width: 753px;
+	height: 36px;
+	line-height: 24px;
+	padding: 0 0 0 12px;
+	background: url(../../img/rules/ruleBg.jpg) no-repeat top;
+	color: #fff;
+}
+.fb-rfooter-box .fb-content-box .rules-content .rulesDetail {
+	padding: 6px 0 20px 25px;
+}
+.fb-rfooter-box .fb-content-box .rules-content table {
+	margin: 0px;
+}

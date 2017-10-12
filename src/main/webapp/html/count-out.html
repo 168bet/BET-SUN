@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<title>公司名</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/game/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/game/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="/game/css/uniform.css" />
+	<link rel="stylesheet" href="/game/css/select2.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.main.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.grey.css" class="skin-color" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<div id="in-content">
+		<div id="breadcrumb">
+			<a href="#"  style="cursor:default"class="current">
+				<span class="language" data-word="drawCount">点数提出</span>
+			</a>
+		</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="horizon controls input-append input-prepend">
+					<span class="add-on language" data-word="">状态</span>
+					<select id="filterstate">
+						<option class="language" data-word="readyToDraw">待提取</option>
+						<option class="language" data-word="drawn">已提取</option>
+						<option class="language" data-word="refuse">拒绝</option>
+					</select>
+				</div>
+				<div class="horizon controls input-append input-prepend">
+					<span class="add-on language" data-word="">用户类型</span>
+					<select id="filterusertype">
+						<option class="language" data-word="member">会员</option>
+						<option class="language" data-word="agent">代理</option>
+					</select>
+				</div>
+				<div class="horizon controls">
+					<button class="btn btn-success" id="querymoneyout">
+						<span class="language" data-word="search">查询</span>
+					</button>
+				</div>
+			</div>
+			<div class="widget-box" style="display:block">
+				<div class="widget-title">
+					<h5>
+						<span class="language" data-word="drawMoneyList">点数提取列表</span>
+					</h5>
+				</div>
+				<div class="widget-content nopadding">
+					<div class="">
+						<div class="dataTables_length">
+							<label>
+								<span class="language" data-word="display">显示</span>
+								<select name="datatable-length" id="selectlines" aria-controls="DataTables_Table_0">
+									<option value="10">10</option>
+									<option value="25">25</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+								<span class="language" data-word="row">行</span>
+							</label>
+						</div>
+					</div>
+					<table class="table table-bordered data-table">
+						<thead id="noconfirmhead">
+							<tr>
+								<th></th>
+							</tr>
+						</thead>
+						<thead id="confirmedhead" class="displayNone">
+							<tr>
+								<th></th>
+							</tr>
+						</thead>
+						<thead id="refusedhead" class="displayNone">
+							<tr>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody id="noconfirmbody">
+							<tr>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div  id="userType" class="displayNone">
+		<span class='language' data-word='member'>会员</span>
+	</div>
+	<div  id="agentType" class="displayNone">
+		<span class='language' data-word='agent'>代理</span>
+	</div>
+
+	<div  id="btnAgree" class="displayNone">
+		<span class='language' data-word='agree'>同意</span>
+	</div>
+	<div  id="btnRefuse" class="displayNone">
+		<span class='language' data-word='refuse'>拒绝</span>
+	</div>
+	<div  id="btnAgreed" class="displayNone">
+		<span class='language' data-word='agree'>同意</span>
+	</div>
+	<div  id="btnSetDrawing" class="displayNone">
+		<span class='language' data-word='setToBeDrawed'>设为待提取</span>
+	</div>
+
+	<script src="/game/js/jquery.min.js"></script>
+	<script src="/game/js/jquery.ui.custom.js"></script>
+	<script src="/game/js/bootstrap.min.js"></script>
+	<script src="/game/js/jquery.uniform.js"></script>
+	<script src="/game/js/select2.min.js"></script>
+	<script src="/game/js/jquery.dataTables.min.js"></script>
+	<script src="/game/js/unicorn.js"></script>
+	<script src="/game/js/unicorn.tables.js"></script>
+	<script src="/game/js/self/drawMoney.js"></script>
+	<script src="/game/js/common/tools.js"></script>
+	<script src="/game/js/self/languageController.js"></script>
+	<script src="/game/js/self/dateFormat.js"></script>
+
+</body>
+</html>

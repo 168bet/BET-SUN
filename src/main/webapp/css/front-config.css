@@ -1,0 +1,53 @@
+.table td {
+	text-align: center;
+}
+.rgc-model-background{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.3);
+	position: fixed;
+	z-index: 9999;
+}
+
+.rgc-edit-panel{
+	width: 600px;
+	background: none repeat scroll 0 0 #eeeeee;
+	margin: 0 auto;
+	position: relative;
+}
+
+.rgc-edit-panel-head{
+	background-color: #e5e5e5;
+	box-shadow: 0 0 1px #ffffff;
+	border-top: 1px solid #d6d6d6;
+	border-bottom: 1px solid #d6d6d6;
+	padding: 10px;
+}
+
+.rgc-edit-panel-head > a{
+	padding: 8px 20px 8px 10px;
+	display: inline-block;
+	background-position: center right;
+	background-repeat: no-repeat;
+	font-size: 11px;
+	font-weight: bold;
+	color: #444444;
+}
+
+.rgc-album-panel{
+	width: 600px;
+	background: none repeat scroll 0 0 #eeeeee;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: center;
+}
+
+.rgc-panel-mask{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,.5);
+	color: #FFF;
+	text-align:center;
+	vertical-align: center;
+}

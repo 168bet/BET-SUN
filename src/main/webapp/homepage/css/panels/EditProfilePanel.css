@@ -1,0 +1,68 @@
+.fb-edit-box{
+	background: #e1f0f7;
+	color: #000;
+	padding: 5px 36px;
+	font-size: 12px;
+	font-family: "宋体";
+	text-align: left;
+}
+
+.fb-edit-input-box{
+	padding-top: 16px;
+	width: 750px;
+	clear: both;
+}
+.fb-edit-input-label{
+	text-align: right;
+	width: 100px;
+	float: left;
+	line-height: 18px;
+}
+
+.fb-edit-input-text{
+	width: 150px;
+	height: 18px;
+	color: #865f5f;
+}
+
+.fb-edit-input-desc{
+	color: #FFF;
+	padding-left: 10px;
+	line-height: 18px;
+}
+
+.fb-edit-pswdstnth-label{
+	text-align: right;
+	width: 100px;
+	float: left;
+	line-height: 18px;
+	height: 25px;
+}
+.fb-edit-valicode-pic{
+	margin: 0 40px;
+	height: 20px;
+	vertical-align: middle;
+}
+.fb-edit-display-box{
+	text-align: center;
+	color: #FFF;
+	padding: 10px;
+	width: 100%;
+}
+.fb-edit-box h1{
+	width: 750px;
+	height: 15px;
+	font-weight: bold;
+	color: #250709;
+	font-size: 14px;
+	clear: both;
+}
+.fb-edit-box button{
+	background: url(../../img/fb-withdraw-button.gif) no-repeat;
+	width: 51px;
+	height: 23px;
+	line-height: 22px;
+	color: #FFF;
+	border: 0;
+	cursor: pointer;
+}

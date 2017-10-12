@@ -1,0 +1,67 @@
+.fb-msg-box{
+
+}
+
+.fb-msg-box-content{
+	padding: 1px;
+	min-height: 458px;
+}
+
+.fb-msg-box-letter{
+
+}
+
+.fb-msg-box-letter-brief{
+	display: inline-block;
+	color: #FFF;
+	width: 100%;
+	background-color: rgb(47,129,114);
+	margin-top: 10px;
+	padding: 5px 30px;
+	text-align: left;
+}
+.fb-msg-box-letter-brief>h6{
+	display: inline-block;
+	padding: 15px;
+	color: rgb(232,224,77);
+	margin: 0;
+	font-size: 20px;
+	font-family: 黑体;
+}
+.fb-msg-box-letter-brief>strong{
+	vertical-align: top;
+	line-height: 30px;
+	margin-left: -12px;
+	text-align: left;
+	color: #C00;
+	font-size: 13px;
+	font-family: 黑体;
+}
+.fb-msg-box-letter-brief>i{
+	display: inline-block;
+	font-size: 20px;
+}
+.fb-msg-box-letter-brief>span{
+	float: right;
+	margin-top: 16px;
+}
+.fb-msg-box-letter-brief>span>strong{
+	padding: 0 5px;
+	color: rgb(180,0,0);
+}
+.fb-msg-box-letter-brief>span>strong:hover{
+	color: rgb(200,0,0);
+	text-decoration:underline;
+}
+.fb-msg-box-letter-content{
+	color: #FFF;
+	width: 100%;
+	background-color: rgb(47,129,114);
+	padding: 20px 30px;
+	text-align: left;
+	border-top: 1px solid;
+}
+.fb-msg-box-empty{
+    margin-top: 200px;
+	color: #FFF;
+}

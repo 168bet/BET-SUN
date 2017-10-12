@@ -1,0 +1,45 @@
+.fb-lottery-box{
+	background: #e1f0f7;
+	padding: 20px 15px;
+}
+.fb-lottery-rest{
+	background: url(../../img/lottery/fb-lottery-rest.png) no-repeat center;
+	height: 300px;
+	width: 100%;
+}
+.fb-lottery-rest h1{
+	position: absolute;
+	top: 145px;
+	left: 475px;
+	font-size: 56px;
+	color: #F00;
+	font-weight: bold;
+	text-align: center;
+	width: 220px;
+}
+.fb-lottery-buttons{
+	height: 38px;
+	width: 342px;
+	margin: 0 auto;
+}
+
+.fb-lottery-result{
+	background: url(../../img/lottery/fb-result.png) no-repeat center;
+	height: 38px;
+	width: 100px;
+	float: left;
+	border: 0px;
+}
+.fb-lottery-result:hover{
+	background: url(../../img/lottery/fb-result-hover.png) no-repeat center;
+}
+.fb-lottery-rules{
+	background: url(../../img/lottery/fb-rules.png) no-repeat center;
+	height: 38px;
+	width: 100px;
+	float: right;
+	border: 0px;
+}
+.fb-lottery-rules:hover{
+	background: url(../../img/lottery/fb-rules-hover.png) no-repeat center;
+}

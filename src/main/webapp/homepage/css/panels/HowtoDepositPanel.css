@@ -1,0 +1,13 @@
+.fb-hfooter-box {
+}
+.fb-hfooter-box .fb-content-box {
+}
+.fb-hfooter-box #direction {
+	padding: 10px;
+	color: white;
+	text-align: left;
+	line-height: 2;
+}
+.fb-hfooter-box #direction .color-span {
+	color: #ff0000;
+}

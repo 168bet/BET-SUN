@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<title>公司名</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/game/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/game/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="/game/css/fullcalendar.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.main.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.grey.css" class="skin-color" />
+	<meta http-equiv="Content-Type" content="text/html;
+charset=utf-8" />
+</head>
+<body>
+	<div id="in-content">
+		<div id="breadcrumb">
+			<a href="#"  style="cursor:default"class="current">
+				<span class="language" data-word="addMember">新增会员</span>
+			</a>
+		</div>
+		<div class="container-fluid">
+			<form id="addUserForm" class="form-horizontal" role="form">
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="memberAccount">会员账号</span>
+						：
+					</label>
+					<div class="controls">
+						<input type="text" placeholder="会员账号" id="username" name="username" class="language" data-word="memberAccount"/>
+						<span class="help-inline" id="usernamehelpinline"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="realName">真实姓名</span>
+						：
+					</label>
+					<div class="controls">
+						<input type="text" placeholder="真实姓名" id="realname" name="realname" class="language" data-word="realName"/>
+						<span class="help-inline" id="realnamehelpinline"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="loginPassword">登录密码</span>
+						：
+					</label>
+					<div class="controls">
+						<input type="password" placeholder="登录密码" id="password" name="password" class="language" data-word="loginPassword"/>
+						<span class="help-inline" id="passwordhelpinline"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="confirmPassword">确认密码</span>
+						：
+					</label>
+					<div class="controls">
+						<input type="password" placeholder="确认密码" id="againpassword" name="againpassword" class="language" data-word="confirmPassword"/>
+						<span class="help-inline" id="againpasswordhelpinline"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="drawMoneyPassword">取款密码</span>
+						：
+					</label>
+					<div class="controls">
+						<input type="password" placeholder="取款密码" id="drawMoneyPassword" name="drawMoneyPassword" class="language" data-word="drawMoneyPassword"/>
+						<span class="help-inline" id="drawMoneyPasswordhelpinline"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="confirmPassword">确认密码</span>
+						：
+					</label>
+					<div class="controls">
+						<input type="password" placeholder="确认密码" id="drawMoneyPasswordAgainPassword" name="drawMoneyPasswordAgainPassword" class="language" data-word="confirmPassword"/>
+						<span class="help-inline" id="drawMoneyPasswordAgainPasswordhelpinline"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="phone">电话</span>
+						：
+					</label>
+					<div class="controls">
+						<input type="text" placeholder="电话" id="telephone" name="telephone" class="language" data-word="phone"/>
+						<span class="help-inline" id="telephonehelpinline"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="email">邮箱</span>
+						：
+					</label>
+					<div class="controls">
+						<input type="text" placeholder="邮箱" id="email" name="email" class="language" data-word="email"/>
+						<span class="help-inline" id="emailhelpinline"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">
+						<span class="language" data-word="parentAgent">所属代理</span>
+						：
+					</label>
+					<div class="controls">
+						<div class="input-append">
+							<input type="text" placeholder="选择代理" id="agentUserName" name="agentUserName" class="language" data-word="chooseAgent" disabled="true">
+							<button class="btn btn-primary" data-toggle="modal">
+								<span class="language" data-word="chooseAgent">选择代理</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-lable"></label>
+					<div class="controls">
+						<button type="submit" class="btn btn-success btn-medium" id="btnSubmit">
+							<span class="language" data-word="commit">提交</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="/game/js/excanvas.min.js"></script>
+	<script src="/game/js/jquery.min.js"></script>
+	<script src="/game/js/jquery.ui.custom.js"></script>
+	<script src="/game/js/bootstrap.min.js"></script>
+	<script src="/game/js/kendo.all.min.js"></script>
+	<script src="/game/js/jquery.flot.min.js"></script>
+	<script src="/game/js/jquery.flot.resize.min.js"></script>
+	<script src="/game/js/jquery.peity.min.js"></script>
+	<script src="/game/js/fullcalendar.min.js"></script>
+	<script src="/game/js/unicorn.js"></script>
+	<script src="/game/js/unicorn.dashboard.js"></script>
+	<script src="/game/js/self/addUser.js"></script>
+	<script src="/game/js/self/languageController.js"></script>
+	<script src="/game/js/jquery.validate.js"></script>
+	<script src="/game/js/jquery.metadata.js"></script>
+	<script src="/game/js/self/customValidator.js"></script>
+	<script src="/game/js/language/validator-message-zh-cn.js"></script>
+
+</body>
+</html>

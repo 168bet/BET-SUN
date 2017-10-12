@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<title>公司名</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/game/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/game/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="/game/css/fullcalendar.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.main.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.grey.css" class="skin-color" />
+	<meta http-equiv="Content-Type" content="text/html;
+charset=utf-8" />
+</head>
+<body>
+	<div id="in-content">
+		<div class="frontDiv" id="frontDiv">
+			<div id="breadcrumb">
+				<a href="#" style="cursor:default" class="current">
+					<span class="language" data-word="newsManage">新闻管理</span>
+				</a>
+				<button class="btn btn-warning" id="btnPublishNews">
+					<span class="language" data-word="publishNews">发布新闻</span>
+				</button>
+			</div>
+			<div class="container-fluid">
+				<div class="widget-box">
+					<div class="widget-title">
+						<h5>
+							<span class="language" data-word="newsManage">新闻管理</span>
+						</h5>
+					</div>
+					<div class="widget-content nopadding" id="user">
+						<div class="">
+							<div class="dataTables_length">
+								<label>
+									<span class="language" data-word="display">显示</span>
+									<select name="datatable-length" id="selectlines" aria-controls="DataTables_Table_0">
+										<option value="10">10</option>
+										<option value="25">25</option>
+										<option value="50">50</option>
+										<option value="100">100</option>
+									</select>
+									<span class="language" data-word="row">行</span>
+								</label>
+							</div>
+						</div>
+						<table class="table table-bordered data-table">
+							<thead id="newshead">
+								<tr>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody id="newsBody">
+								<tr>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div id="txtDetail" class="displayNone">
+				<span class='language' data-word='detail'>详细</span>
+			</div>
+			<div id="txtDelete" class="displayNone">
+				<span class='language' data-word='delete'>删除</span>
+			</div>
+			<div class="dgReturnDiv" id="dgReturn">
+				<button type="button" class="btn btn-primary btn-medium">
+					<span class="language" data-word="back">返回</span>
+				</button>
+			</div>
+		</div>
+		<div class="backDiv" id="detailDiv">
+			<div id="breadcrumb">
+				<a href="#"  style="cursor:default"class="current">
+					<span class="language" data-word="newsDetail">新闻详情</span>
+				</a>
+			</div>
+			<div class="container-fluid">
+				<form id="userManageForm" class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="control-label">
+							<span class="language" data-word="publisher">发布人</span>
+							：
+						</label>
+						<div class="controls">
+							<input type="text" disabled="true" id="publisher" name="publisher" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">
+							<span class="language" data-word="publishTime">发布时间</span>
+							：
+						</label>
+						<div class="controls">
+							<input type="text" disabled="true" id="publishTime" name="publishTime" />
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">
+							<span class="language" data-word="newsContent">新闻内容</span>
+							：
+						</label>
+						<div class="controls">
+							<textarea rows="10" disabled="true" id="newsContent" name="newsContent" ></textarea>
+						</div>
+					</div>
+					<div class="displayNone">
+						<input type="text" disabled="true" id="txtId" name="txtId" />
+					</div>
+					<div class="control-group">
+						<label class="control-lable"></label>
+						<div class="controls">
+							<button type="button" class="btn btn-warning btn-medium" id="btnDelete">
+								<span class="language" data-word="delete">删除</span>
+							</button>
+							<button type="button" class="btn btn-warning btn-midium btnBack" id="btnBack">
+								<span class="language" data-word="back">返回</span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="backDiv" id="publishDiv">
+			<div id="breadcrumb">
+				<a href="#"  style="cursor:default"class="current">
+					<span class="language" data-word="publishNews">发布新闻</span>
+				</a>
+			</div>
+			<div class="container-fluid">
+				<form id="publishForm" class="form-horizontal" role="form">
+					<div class="control-group">
+						<label class="control-label">
+							<span class="language" data-word="newsContent">新闻内容</span>
+							：
+						</label>
+						<div class="controls">
+							<textarea rows="10" id="_newsContent" name="_newsContent" ></textarea>
+						</div>
+					</div>
+					<div class="displayNone">
+						<input type="text" disabled="true" id="txtId" name="txtId" />
+					</div>
+					<div class="control-group">
+						<label class="control-lable"></label>
+						<div class="controls">
+							<button type="submit" class="btn btn-warning btn-midium" id="btnPublish">
+								<span class="language" data-word="publish">发布</span>
+							</button>
+							<button type="button" class="btn btn-warning btn-midium btnBack" id="btnBack">
+								<span class="language" data-word="back">返回</span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+    <script src="/game/js/jquery.min.js"></script>
+    <script src="/game/js/jquery.ui.custom.js"></script>
+    <script src="/game/js/bootstrap.min.js"></script>
+    <script src="/game/js/jquery.uniform.js"></script>
+    <script src="/game/js/select2.min.js"></script>
+    <script src="/game/js/jquery.dataTables.min.js"></script>
+    <script src="/game/js/unicorn.js"></script>
+    <script src="/game/js/unicorn.tables.js"></script>
+	<script src="/game/js/self/newsManage.js"></script>
+	<script src="/game/js/common/tools.js"></script>
+	<script src="/game/js/self/languageController.js"></script>
+	<script src="/game/js/jquery.validate.js"></script>
+	<script src="/game/js/jquery.metadata.js"></script>
+	<script src="/game/js/self/customValidator.js"></script>
+	<script src="/game/js/language/validator-message-zh-cn.js"></script>
+	<script src="/game/js/self/dateFormat.js"></script>
+
+</body>
+</html>

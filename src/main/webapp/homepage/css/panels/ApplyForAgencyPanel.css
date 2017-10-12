@@ -1,0 +1,54 @@
+.fb-applyagency-box{
+	background: #e1f0f7;
+	line-height: 17px;
+	padding-top: 20px;
+	color: #000;
+}
+
+.fb-applyagency-box .fb-input-box{
+	text-align: left;
+	vertical-align: middle;
+	padding: 0px;
+	margin: 4px 0px;
+}
+.fb-applyagency-box .fb-input-label{
+	width: 155px;
+	height: 18px;
+	color: #000;
+	text-align: right;
+	padding-right: 10px; 
+}
+.fb-applyagency-box .fb-input-text{
+	height: 19px;
+	color: #000;
+	vertical-align: middle;
+}
+.fb-applyagency-box .fb-valicode-pic{
+	height: 19px;
+	margin: 0px 30px;
+	vertical-align: middle;
+}
+.fb-applyagency-box hr{
+	width: 85%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 0;
+	border-top: 1px solid #000;
+}
+.fb-applyagency-box button{
+	background: url(../../img/fb-withdraw-button.gif) no-repeat;
+	width: 51px;
+	height: 23px;
+	line-height: 22px;
+	color: #FFF;
+	border: 0;
+	cursor: pointer;
+	margin: 20px 0px;
+}
+.fb-applyagency-login:focus{
+	font-weight: bold;
+	color: #FFF;
+}
+.fb-applyagency-login:hover{
+	color: #FFF;
+}

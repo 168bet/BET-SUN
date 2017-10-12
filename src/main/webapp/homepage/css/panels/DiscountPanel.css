@@ -1,0 +1,103 @@
+.fb-dgame-box {
+}
+.fb-dgame-box .fb-content-box {
+}
+.fb-dgame-box .fb-content-box #ContentBlock {
+	width: 100%;
+	background: #efe697;
+	padding: 20px;
+	text-align: left;
+	line-height: 2;
+}
+.fb-dgame-box .fb-content-box #ContentBlock h2 {
+	color: #FF0000;
+}
+.fb-dgame-box .fb-content-box #ContentBlock table {
+	border-spacing: 1px;
+	text-align: center;
+	border-collapse: separate;
+}
+.fb-dgame-box .fb-content-box #ContentBlock table tr {
+	background: #797021;
+}
+.fb-dgame-box .fb-content-box #ContentBlock table td {
+	background: #ffff99;
+	color: #ff0000;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table1 {
+	width: 634px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table1 tr td {
+	height: 30px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table1 tr td:nth-child(1) {
+	width: 127px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table1 tr td:nth-child(2) {
+	width: 166;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table1 tr td:nth-child(3) {
+	width: 130;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table1 tr td:nth-child(4) {
+	width: 213;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table2 {
+	width: 634px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table2 tr td {
+	height: 30px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table2 tr td:nth-child(1) {
+	width: 127px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table2 tr td:nth-child(2) {
+	width: 166;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table2 tr td:nth-child(3) {
+	width: 97;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table2 tr td:nth-child(4) {
+	width: 276;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table2 tr td:nth-child(5) {
+	width: 276;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table3 {
+	width: 618px;
+	height: 126px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table3 tr td {
+	height: 30px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table3 tr:first-of-type td {
+	height: 30px;
+	background: #ffcc00;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table3 tr td:nth-child(1) {
+	width: 102px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table3 tr td:nth-child(2) {
+	width: 102px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table3 tr td:nth-child(3) {
+	width: 103px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table3 tr td:nth-child(4) {
+	width: 103px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table3 tr td:nth-child(5) {
+	width: 103px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table4 {
+	width: 634px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table4 tr td {
+	height: 30px;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table4 tr td:nth-child(1) {
+	width: 50%;
+}
+.fb-dgame-box .fb-content-box #ContentBlock #table4 tr td:nth-child(2) {
+	width: 50%;
+}

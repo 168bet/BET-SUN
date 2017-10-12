@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<title>公司名</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/game/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/game/css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="/game/css/uniform.css" />
+	<link rel="stylesheet" href="/game/css/select2.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.main.css" />
+	<link rel="stylesheet" href="/game/css/unicorn.grey.css" class="skin-color" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<div id="in-content">
+		<div class="frontDiv">
+			<div id="breadcrumb">
+				<a href="#"  style="cursor:default"class="current">
+					<span class="language" data-word="adminManage">普通管理员管理</span>
+				</a>
+			</div>
+			<div class="container-fluid">
+				<div class="widget-box">
+					<div class="widget-title">
+						<h5>
+							<span class="language" data-word="admin">普通管理员</span>
+						</h5>
+					</div>
+					<div class="widget-content nopadding" id="commonadmin">
+						<div class="">
+							<div class="dataTables_length">
+								<label>
+									<span class="language" data-word="display">显示</span>
+									<select name="datatable-length" id="selectlines" aria-controls="DataTables_Table_0">
+										<option value="10">10</option>
+										<option value="25">25</option>
+										<option value="50">50</option>
+										<option value="100">100</option>
+									</select>
+									<span class="language" data-word="row">行</span>
+								</label>
+							</div>
+						</div>
+						<table class="table table-bordered data-table">
+							<thead id="commonadminhead">
+								<tr>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody id="commonadminbody">
+								<tr>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+            <div id="txtDetail" class="displayNone">
+                <span class='language' data-word='detail'>详细</span>
+            </div>
+            <div id="txtAuthority" class="displayNone">
+                <span class='language' data-word='admin'>普通管理员</span>
+            </div>
+			<div  id="txtEnable" class="displayNone">
+				<span class='language' data-word='enable'>启用</span>
+			</div>
+			<div id="txtDisable" class="displayNone">
+				<span class='language' data-word='disable'>停用</span>
+			</div>
+			<div id="txtEnabled" class="displayNone">
+				<span class='language' data-word='enabled'>启用</span>
+			</div>
+			<div id="txtDisabled" class="displayNone">
+				<span class='language' data-word='disabled'>停用</span>
+			</div>
+			<div id="txtLock" class="displayNone">
+				<span class='language' data-word='lock'>锁定</span>
+			</div>
+			<div id="txtUnlock" class="displayNone">
+				<span class='language' data-word='unlock'>解锁</span>
+			</div>
+			<div id="txtLocked" class="displayNone">
+				<span class='language' data-word='locked'>锁定</span>
+			</div>
+			<div id="txtUnlocked" class="displayNone">
+				<span class='language' data-word='unlocked'>解锁</span>
+			</div>
+		</div>
+		<div class="backDiv">
+			<div id="breadcrumb">
+				<a href="#"  style="cursor:default"class="current">
+					<span class="language" data-word="adminInfo">普通管理员详细信息</span>
+				</a>
+			</div>
+			<div class="container-fluid">
+				<form id="commonAdminDetailForm" class="form-horizontal" role="form">
+					<div class="form-group">
+						<label class="control-label">
+							<span class="language" data-word="memberAccount">会员帐号</span>
+							：
+						</label>
+						<div class="controls">
+							<input type="text" disabled="true" id="username"/>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">
+							<span class="language" data-word="phone">电话</span>
+							：
+						</label>
+						<div class="controls">
+							<input type="text" id="telephone" name="telephone" />
+							<span class="help-inline" id="telephonehelpinline"></span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">
+							<span class="language" data-word="email">邮箱</span>
+							：
+						</label>
+						<div class="controls">
+							<input type="text" id="email" name="email" />
+							<span class="help-inline" id="emailhelpinline"></span>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">
+							<span class="language" data-word="authority">权限</span>
+							：
+						</label>
+						<div class="controls">
+							<select id="selecttype">
+								<option class="language" data-word="admin" value="1">普通管理员</option>
+								<option class="language" data-word="customerServiceAdmin" value="2">客服管理员</option>
+							</select>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-lable"></label>
+						<div class="controls">
+							<button type="submit" class="btn btn-warning btn-medium" id="changecommonadmininfo">
+								<span class="language" data-word="change">修改</span>
+							</button>
+							<button type="button" class="btn btn-warning btn-medium" id="btnBack">
+								<span class="language" data-word="back">返回</span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="/game/js/jquery.min.js"></script>
+	<script src="/game/js/jquery.ui.custom.js"></script>
+	<script src="/game/js/bootstrap.min.js"></script>
+	<script src="/game/js/jquery.uniform.js"></script>
+	<script src="/game/js/select2.min.js"></script>
+	<script src="/game/js/jquery.dataTables.min.js"></script>
+	<script src="/game/js/unicorn.js"></script>
+	<script src="/game/js/unicorn.tables.js"></script>
+	<script src="/game/js/self/commonAdminManager.js"></script>
+	<script src="/game/js/self/commonAdminDetail.js"></script>
+	<script src="/game/js/common/tools.js"></script>
+	<script src="/game/js/self/languageController.js"></script>	
+	<script src="/game/js/jquery.validate.js"></script>
+	<script src="/game/js/jquery.metadata.js"></script>
+	<script src="/game/js/self/customValidator.js"></script>
+	<script src="/game/js/language/validator-message-zh-cn.js"></script>
+	<script src="/game/js/self/dateFormat.js"></script>
+
+</body>
+</html>

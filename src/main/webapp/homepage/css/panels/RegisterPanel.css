@@ -1,0 +1,68 @@
+.fb-register-box{
+	text-align: left;
+}
+
+.fb-register-breaker{
+	display: inline-block;
+	width: 100%;
+	margin: 6px 0;
+}
+
+.fb-register-input-box{
+	padding: 4px 10px;
+	width: 100%;
+}
+.fb-register-input-label{
+	padding-right: 25px;
+	width: 180px;
+	color: #FFF;
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.fb-register-input-text{
+	width: 200px;
+}
+
+.fb-register-input-desc{
+	color: #FFF;
+	padding-left: 10px;
+	line-height: 18px;
+}
+.fb-register-input-desc.required:before{
+	content: "　";
+	background-image: url('../../img/required.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.fb-register-input-desc.attention:before{
+	content: "　";
+	background-image: url('../../img/attention.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.fb-register-pswdstnth-box{
+	padding: 0px 10px;
+	width: 100%;
+}
+.fb-register-valicode-pic{
+	width: 80px;
+	margin: 0 20px;
+	vertical-align: middle;
+}
+.fb-register-display-box{
+	text-align: center;
+	color: #FFF;
+	padding: 10px;
+	width: 100%;
+}
+.fb-register-display-box input{
+	vertical-align: middle;
+	margin: 0;
+}

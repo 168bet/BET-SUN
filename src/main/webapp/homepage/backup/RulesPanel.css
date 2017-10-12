@@ -1,0 +1,30 @@
+.rules-content {
+	color: red;
+	text-align: left;
+	padding: 10px;
+}
+.rules-content .rulesTopBg {
+	width: 768px;
+	height: 30px;
+	margin: 0 0 14px 25px;
+	background: url(rulesTopBg.jpg) repeat-x left top;
+}
+.rules-content .rulesTopBg div {
+	width: 120px;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+.rules-content .ruleBg {
+	width: 753px;
+	height: 36px;
+	line-height: 24px;
+	padding: 0 0 0 12px;
+	background: url(ruleBg.jpg) no-repeat top;
+	color: #fff;
+}
+.rules-content .rulesDetail {
+	padding: 6px 0 20px 25px;
+}

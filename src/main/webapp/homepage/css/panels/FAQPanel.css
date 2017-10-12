@@ -1,0 +1,13 @@
+.fb-ffooter-box {
+}
+.fb-ffooter-box .fb-content-box {
+}
+.fb-ffooter-box #direction {
+	padding: 10px;
+	color: white;
+	text-align: left;
+	line-height: 2;
+}
+.fb-ffooter-box #direction .color-span {
+	color: #ff0000;
+}
